@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vf.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Validation Form</h1>
+    <form novalidate>
+        <label for="email">
+            Email
+            <input type="email" name="mail" id="mail" required>
+            <span class="mail-error"></span>
+        </label>
+        <label for="country">
+            Country 
+            <input type="text" name="country" id="country" minlength="3" required>
+            <span class="country-error"></span>
+        </label>
+        <label for="zip-code">
+            Zip-code
+            <input type="number" name="zip" id="zip" min="2" required>
+            <span class="zip-error"></span>
+        </label>
+        <label for="password">
+            Password
+            <input type="password" name="password" id="password" minlength="7" required>
+            <span class="password-error"></span>
+        </label>
+        <label for="confirm-password" >
+            Confirm Password
+            <input type="password" name="confirm-password" id="confirm-password" minlength="7" required>
+            <span class="cp-error"></span>
+        </label>
+        <button type="submit">SUBMIT</button>
+    </form>
+    <script src="vf.js"></script>
+</body>
+</html>

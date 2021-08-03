@@ -1,0 +1,82 @@
+body {
+    background: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+form {
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+input {
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 grey;
+    outline: none;
+}
+input:invalid {
+    border:2px solid #900;
+    background-color: rgb(255, 255, 255);
+    color: #900;
+}
+input:focus:invalid {
+    outline: none;
+}
+.mail-error,
+.country-error,
+.zip-error,
+.password-error,
+.cp-error {
+    display: none;
+}
+.mail-error.active,
+.country-error.active,
+.zip-error.active,
+.password-error.active,
+.cp-error.active {
+    display: block;
+    width: 420px;
+    padding: 0 0 5px 5px;
+    font-size: 100%;
+    color: white;
+    background-color: rgba(158, 62, 62, 0.5);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:valid {
+    padding: 0 20px;
+    background: rgba(200, 212, 30, 0.5);
+    border: 2px solid black;
+    color: white;
+}
+button {
+    padding: 10px;
+    margin-right: 20%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: goldenrod;
+}
+button:hover {
+    background: cyan;
+    opacity: 0.9;
+}
